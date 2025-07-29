@@ -1,113 +1,59 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Mio Primo Post: Introduzione - Il Mio Blog</title>
+    <title>First Steps into the Digital World - My Simple Blog</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Stili CSS simili a quelli della homepage, o puoi collegare un file CSS esterno */
+        /* Custom font for a clean look */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 20px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header h1 {
-            text-align: center;
-            margin: 0;
-        }
-        nav ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            padding: 0 20px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        .post-content {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .post-content h1 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .post-meta {
-            color: #777;
-            font-size: 0.9em;
-            margin-bottom: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: #fff;
-            margin-top: 20px;
-            border-top: #77aaff 3px solid;
+            font-family: "Inter", sans-serif;
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1><a href="../index.html" style="color: #fff; text-decoration: none;">Il Mio Blog</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about.html">Chi Sono</a></li>
-                    <li><a href="../contact.html">Contatti</a></li>
-                </ul>
-            </nav>
+<body class="bg-black text-white min-h-screen flex flex-col items-center p-4">
+
+    <!-- Main container for the blog post content -->
+    <div class="container max-w-3xl mx-auto bg-gray-900 rounded-lg shadow-lg p-6 md:p-8 lg:p-10">
+
+        <!-- Post Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-400 mb-4 rounded-md">First Steps into the Digital World</h1>
+            <p class="text-md md:text-lg text-gray-100">Published on July 29, 2025 by John Doe</p>
+        </header>
+
+        <!-- Post Content -->
+        <main class="text-gray-100 leading-relaxed text-lg">
+            <p class="mb-6">
+                Welcome to my brand new blog! This is the inaugural post where I'll be sharing my journey, insights, and perhaps a few musings on technology, life, and everything that sparks my curiosity. Starting a blog has been on my mind for a while, and I'm excited to finally put thoughts into words and share them with you.
+            </p>
+            <p class="mb-6">
+                The idea behind this blog is to create a space for continuous learning and sharing. In a world that's constantly evolving, especially in the tech landscape, staying updated and exchanging ideas is crucial. I aim to cover a wide range of topics that I'm passionate about, from the latest advancements in web development to personal productivity hacks and creative thinking processes.
+            </p>
+            <p class="mb-6">
+                You can expect content ranging from in-depth coding tutorials, practical web development tips, to personal reflections and reviews of tools and resources I find useful. My goal is to make this space a valuable resource for anyone interested in similar topics, whether you're a seasoned developer, a budding enthusiast, or just curious about the digital world.
+            </p>
+            <p class="mb-6">
+                I believe in the power of community and interaction, so please feel free to leave comments, share your thoughts, and ask questions. Your feedback will be invaluable in shaping the direction and content of this blog. I'm looking forward to building this journey together with you.
+            </p>
+            <p>
+                Stay tuned for more updates, and thank you for being here at the very beginning of this exciting adventure!
+            </p>
+        </main>
+
+        <!-- Back to Blog Link -->
+        <div class="mt-10 pt-6 border-t border-gray-800 text-center">
+            <a href="index.html" class="text-blue-400 hover:text-blue-500 font-semibold inline-block">&larr; Back to Blog</a>
         </div>
-    </header>
 
-    <div class="container">
-        <div class="post-content">
-            <h1>Il Mio Primo Post: Introduzione</h1>
-            <p class="post-meta">Pubblicato il: 28 Luglio 2025 | Categoria: Pensieri</p>
+        <!-- Blog Footer -->
+        <footer class="text-center text-white mt-10 pt-6 border-t border-gray-800">
+            <p>Pugini Marco</p>
+        </footer>
 
-            <p>Benvenuti nel mio nuovissimo blog! Sono entusiasta di iniziare questo viaggio e condividere le mie passioni con voi. Questo primo post è solo un'introduzione a ciò che ho in mente.</p>
-
-            <p>Ho deciso di creare questo blog per avere uno spazio dove poter esprimere liberamente le mie idee, condividere le mie esperienze e, spero, interagire con persone che la pensano allo stesso modo.</p>
-
-            <h3>Cosa aspettarsi</h3>
-            <p>Nei prossimi post, affronterò argomenti che vanno dalla tecnologia al lifestyle, passando per recensioni di libri e riflessioni personali. Il mio obiettivo è offrire contenuti interessanti e stimolanti che possano aggiungere valore alla vostra giornata.</p>
-
-            <p>Grazie per essere qui! Spero che vi godiate la lettura e non esitate a lasciare un commento o a contattarmi.</p>
-
-            <p><a href="../index.html">&larr; Torna alla Home</a></p>
-        </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Il Mio Blog. Tutti i diritti riservati.</p>
-        </div>
-    </footer>
 </body>
 </html>

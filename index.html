@@ -1,125 +1,89 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Mio Blog Personale - Homepage</title>
+    <title>My Simple Blog</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Stili CSS di base per un aspetto pulito */
+        /* Custom font for a clean look */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 20px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header h1 {
-            text-align: center;
-            margin: 0;
-        }
-        nav ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            padding: 0 20px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        .main-content {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .post-preview {
-            border-bottom: 1px solid #eee;
-            padding-bottom: 15px;
-            margin-bottom: 15px;
-        }
-        .post-preview:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-        .post-preview h2 a {
-            color: #333;
-            text-decoration: none;
-        }
-        .post-preview h2 a:hover {
-            color: #77aaff;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: #fff;
-            margin-top: 20px;
-            border-top: #77aaff 3px solid;
+            font-family: "Inter", sans-serif;
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Il Mio Blog</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Chi Sono</a></li> <li><a href="contact.html">Contatti</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body class="bg-black text-white min-h-screen flex flex-col items-center p-4">
 
-    <div class="container">
-        <div class="main-content">
-            <h2>Benvenuto nel mio blog!</h2>
-            <p>Qui troverai i miei pensieri, esperienze e approfondimenti su vari argomenti. Spero che ti piaccia leggere!</p>
+    <!-- Main container for the blog content -->
+    <div class="container max-w-3xl mx-auto bg-gray-900 rounded-lg shadow-lg p-6 md:p-8 lg:p-10">
 
-            <h3>Ultimi Post</h3>
+        <!-- Blog Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-blue-400 mb-4 rounded-md">My Awesome Blog</h1>
+            <!-- Changed text color to a lighter gray for better contrast -->
+            <p class="text-lg md:text-xl text-gray-100">Thoughts, ideas, and everything in between.</p>
+        </header>
 
-            <div class="post-preview">
-                <h2><a href="posts/il-mio-primo-post.html">Il Mio Primo Post: Introduzione</a></h2>
-                <p>Data: 28 Luglio 2025</p>
-                <p>Questo è un breve riassunto del mio primo post. Parlerò di come ho iniziato a creare questo blog e cosa aspettarsi in futuro...</p>
-                <a href="posts/il-mio-primo-post.html">Leggi di più &raquo;</a>
-            </div>
+        <!-- Blog Posts Section -->
+        <main>
+            <!-- Blog Post 1 -->
+            <article class="mb-10 pb-6 border-b border-gray-700 last:border-b-0">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-300 mb-3">First Steps into the Digital World</h2>
+                <!-- Changed text color to a lighter gray for better contrast -->
+                <p class="text-sm text-gray-100 mb-4">Published on July 29, 2025 by John Doe</p>
+                <!-- Changed text color to a lighter gray for better contrast -->
+                <p class="text-gray-100 leading-relaxed mb-4">
+                    Welcome to my brand new blog! This is the inaugural post where I'll be sharing my journey, insights, and perhaps a few musings on technology, life, and everything that sparks my curiosity. Starting a blog has been on my mind for a while, and I'm excited to finally put thoughts into words and share them with you.
+                </p>
+                <!-- Changed text color to a lighter gray for better contrast -->
+                <p class="text-gray-100 leading-relaxed">
+                    Expect to see content ranging from coding tutorials, web development tips, to personal reflections and reviews. I believe in continuous learning and sharing knowledge, and I hope this space becomes a valuable resource for anyone interested in similar topics. Stay tuned for more updates!
+                </p>
+                <!-- Link updated to point to the new first-post.html -->
+                <a href="first-post.html" class="text-blue-400 hover:text-blue-500 font-semibold mt-4 inline-block">Read More &rarr;</a>
+            </article>
 
-            <div class="post-preview">
-                <h2><a href="posts/consigli-per-la-programmazione.html">5 Consigli Utili per la Programmazione</a></h2>
-                <p>Data: 25 Luglio 2025</p>
-                <p>In questo post, condivido alcuni dei miei consigli preferiti per migliorare le tue abilità di programmazione e rendere il processo più divertente...</p>
-                <a href="posts/consigli-per-la-programmazione.html">Leggi di più &raquo;</a>
-            </div>
+            <!-- Blog Post 2 -->
+            <article class="mb-10 pb-6 border-b border-gray-700 last:border-b-0">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-300 mb-3">Understanding Responsive Design</h2>
+                <!-- Changed text color to a lighter gray for better contrast -->
+                <p class="text-sm text-gray-100 mb-4">Published on July 25, 2025 by Jane Smith</p>
+                <!-- Changed text color to a lighter gray for better contrast -->
+                <p class="text-gray-100 leading-relaxed mb-4">
+                    In today's multi-device world, responsive design is no longer optional – it's essential. A responsive website adapts its layout to the screen size of the user's device, providing an optimal viewing experience across desktops, tablets, and smartphones. This post dives into the core principles of responsive design, including fluid grids, flexible images, and media queries.
+                </p>
+                <!-- Changed text color to a lighter gray for better contrast -->
+                <p class="text-gray-100 leading-relaxed">
+                    We'll explore how to implement these techniques using modern CSS frameworks like Tailwind CSS, ensuring your website looks great and functions perfectly, no matter how it's accessed. Learn why mobile-first design is a powerful approach and how it can streamline your development process.
+                </p>
+                <a href="#" class="text-blue-400 hover:text-blue-500 font-semibold mt-4 inline-block">Read More &rarr;</a>
+            </article>
 
-            </div>
+            <!-- Blog Post 3 -->
+            <article class="mb-10 pb-6 border-b border-gray-700 last:border-b-0">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-300 mb-3">The Power of JavaScript ES6 Features</h2>
+                <!-- Changed text color to a lighter gray for better contrast -->
+                <p class="text-sm text-gray-100 mb-4">Published on July 20, 2025 by Alex Green</p>
+                <!-- Changed text color to a lighter gray for better contrast -->
+                <p class="text-gray-100 leading-relaxed mb-4">
+                    ECMAScript 2015 (ES6) introduced a plethora of new features to JavaScript, making the language more powerful, readable, and enjoyable to write. From arrow functions and template literals to destructuring assignments and Promises, ES6 significantly improved the developer experience.
+                </p>
+                <!-- Changed text color to a lighter gray for better contrast -->
+                <p class="text-gray-100 leading-relaxed">
+                    This article will walk you through some of the most impactful ES6 features, providing code examples and explanations to help you integrate them into your daily coding practices. Discover how these modern JavaScript constructs can simplify your code and enhance its maintainability.
+                </p>
+                <a href="#" class="text-blue-400 hover:text-blue-500 font-semibold mt-4 inline-block">Read More &rarr;</a>
+            </article>
+        </main>
+
+        <!-- Blog Footer -->
+        <footer class="text-center text-white mt-10 pt-6 border-t border-gray-800">
+            <!-- Updated footer text as requested -->
+            <p>Pugini Marco</p>
+        </footer>
+
     </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Il Mio Blog. Tutti i diritti riservati.</p>
-        </div>
-    </footer>
 </body>
 </html>
