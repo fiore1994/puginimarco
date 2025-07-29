@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Mio Blog Personale - Homepage</title>
+    <title>Il Mio Primo Post: Introduzione - Il Mio Blog</title>
     <style>
-        /* Stili CSS di base per un aspetto pulito */
+        /* Stili CSS simili a quelli della homepage, o puoi collegare un file CSS esterno */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -46,28 +46,21 @@
             text-transform: uppercase;
             font-size: 16px;
         }
-        .main-content {
+        .post-content {
             padding: 20px;
             background: #fff;
             margin-top: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .post-preview {
-            border-bottom: 1px solid #eee;
-            padding-bottom: 15px;
-            margin-bottom: 15px;
-        }
-        .post-preview:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-        .post-preview h2 a {
+        .post-content h1 {
             color: #333;
-            text-decoration: none;
+            margin-bottom: 10px;
         }
-        .post-preview h2 a:hover {
-            color: #77aaff;
+        .post-meta {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 20px;
         }
         footer {
             text-align: center;
@@ -82,38 +75,33 @@
 <body>
     <header>
         <div class="container">
-            <h1>Il Mio Blog</h1>
+            <h1><a href="../index.html" style="color: #fff; text-decoration: none;">Il Mio Blog</a></h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Chi Sono</a></li> <li><a href="contact.html">Contatti</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">Chi Sono</a></li>
+                    <li><a href="../contact.html">Contatti</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <div class="container">
-        <div class="main-content">
-            <h2>Benvenuto nel mio blog!</h2>
-            <p>Qui troverai i miei pensieri, esperienze e approfondimenti su vari argomenti. Spero che ti piaccia leggere!</p>
+        <div class="post-content">
+            <h1>Il Mio Primo Post: Introduzione</h1>
+            <p class="post-meta">Pubblicato il: 28 Luglio 2025 | Categoria: Pensieri</p>
 
-            <h3>Ultimi Post</h3>
+            <p>Benvenuti nel mio nuovissimo blog! Sono entusiasta di iniziare questo viaggio e condividere le mie passioni con voi. Questo primo post è solo un'introduzione a ciò che ho in mente.</p>
 
-            <div class="post-preview">
-                <h2><a href="posts/il-mio-primo-post.html">Il Mio Primo Post: Introduzione</a></h2>
-                <p>Data: 28 Luglio 2025</p>
-                <p>Questo è un breve riassunto del mio primo post. Parlerò di come ho iniziato a creare questo blog e cosa aspettarsi in futuro...</p>
-                <a href="posts/il-mio-primo-post.html">Leggi di più &raquo;</a>
-            </div>
+            <p>Ho deciso di creare questo blog per avere uno spazio dove poter esprimere liberamente le mie idee, condividere le mie esperienze e, spero, interagire con persone che la pensano allo stesso modo.</p>
 
-            <div class="post-preview">
-                <h2><a href="posts/consigli-per-la-programmazione.html">5 Consigli Utili per la Programmazione</a></h2>
-                <p>Data: 25 Luglio 2025</p>
-                <p>In questo post, condivido alcuni dei miei consigli preferiti per migliorare le tue abilità di programmazione e rendere il processo più divertente...</p>
-                <a href="posts/consigli-per-la-programmazione.html">Leggi di più &raquo;</a>
-            </div>
+            <h3>Cosa aspettarsi</h3>
+            <p>Nei prossimi post, affronterò argomenti che vanno dalla tecnologia al lifestyle, passando per recensioni di libri e riflessioni personali. Il mio obiettivo è offrire contenuti interessanti e stimolanti che possano aggiungere valore alla vostra giornata.</p>
 
-            </div>
+            <p>Grazie per essere qui! Spero che vi godiate la lettura e non esitate a lasciare un commento o a contattarmi.</p>
+
+            <p><a href="../index.html">&larr; Torna alla Home</a></p>
+        </div>
     </div>
 
     <footer>
